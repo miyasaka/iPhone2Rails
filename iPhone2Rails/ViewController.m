@@ -77,7 +77,7 @@
                  
                  [names addObject:[jsonObject objectForKey:@"col1"]];
              }
-             
+             NSLog(@"miya-1:%@",names);
              self.tableViewNameList.nameList = names;
              [self.tableViewNameList reloadData];
              
