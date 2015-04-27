@@ -80,6 +80,7 @@
              NSLog(@"miya-1:%@",names);
              self.tableViewNameList.nameList = names;
              [self.tableViewNameList reloadData];
+             NSLog(@"miya-2:%@",names);
              
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error){
