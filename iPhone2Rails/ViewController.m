@@ -78,12 +78,9 @@
                  [names addObject:[jsonObject objectForKey:@"col1"]];
              }
              
-             NSLog(@"Miya-1: %@",names);
-                          
              self.tableViewNameList.nameList = names;
              [self.tableViewNameList reloadData];
              
-             NSLog(@"Miya-2: %@",self.tableViewNameList.nameList);
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error){
              NSLog(@"error: %@",error);
