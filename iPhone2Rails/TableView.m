@@ -10,12 +10,13 @@
 
 @implementation TableView
 
-#pragma mark - TableViewDataSource
+// TableViewDataSource :必須（データ件数を返す）
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.nameList count];
 }
 
+// TableViewDataSource :必須（テーブルに表示するデータを返す）
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
