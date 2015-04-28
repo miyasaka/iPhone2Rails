@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iPhone2Rails/ViewController.m"
-            timestampString = "451817262.593298"
+            timestampString = "451879992.936723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-postData:"
             landmarkType = "5">
          </BreakpointContent>

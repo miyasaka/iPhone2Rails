@@ -42,20 +42,28 @@
 
     // redy for send parameter
     NSDictionary *params = [NSDictionary dictionaryWithObject:self.txtImp.text forKey:@"sample2[col1]"];
+
+    // chacke input data length
+    NSString *text = [params objectForKey:@"sample2[col1]"];
     
-    //HTTP
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    
-    [manager POST:NAMELISTURL parameters:params
-          success:^(AFHTTPRequestOperation *opertion, id responseObject){
-              // success
-              NSLog(@"success: %@", responseObject);
-          }
-     
-          failure:^(AFHTTPRequestOperation *operation, NSError *error){
-            // failed
-            NSLog(@"error: %@", error);
-          }];
+    // NSLog(@"miya-000:%@",text);
+    // to be String Class, NSDictionary class can not bind null value
+    if(text.length > 0){
+        //HTTP
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        
+        [manager POST:NAMELISTURL parameters:params
+         // success
+              success:^(AFHTTPRequestOperation *opertion, id responseObject){
+                  NSLog(@"success: %@", responseObject);
+              }
+         // failed
+              failure:^(AFHTTPRequestOperation *operation, NSError *error){
+                  NSLog(@"error: %@", error);
+              }];
+    }else{
+        NSLog(@"miya-111:");
+    }
 }
 
 - (IBAction)getData:(id)sender {
