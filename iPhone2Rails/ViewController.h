@@ -17,5 +17,7 @@
 - (IBAction)postData:(id)sender;
 
 - (IBAction)getData:(id)sender;
+
+- (IBAction)searchData:(id)sender;
 @end
 

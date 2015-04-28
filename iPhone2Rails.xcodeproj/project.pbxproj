@@ -10,10 +10,9 @@
 		A72485DF1ADF996900052F2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72485DE1ADF996900052F2D /* main.m */; };
 		A72485E21ADF996900052F2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72485E11ADF996900052F2D /* AppDelegate.m */; };
 		A72485E51ADF996900052F2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72485E41ADF996900052F2D /* ViewController.m */; };
-		A72485E81ADF996900052F2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72485E61ADF996900052F2D /* Main.storyboard */; };
 		A72485EA1ADF996900052F2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72485E91ADF996900052F2D /* Images.xcassets */; };
-		A72485ED1ADF996900052F2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72485EB1ADF996900052F2D /* LaunchScreen.xib */; };
 		A72485F91ADF996900052F2D /* iPhone2RailsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72485F81ADF996900052F2D /* iPhone2RailsTests.m */; };
+		A7A91C691AEE2AD800EF956D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A91C671AEE2AD800EF956D /* Main.storyboard */; };
 		A7D7B8C41AE4B84D000183D2 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D7B8C31AE4B84D000183D2 /* TableView.m */; };
 		DFD4DD35032DDA47B885CFF0 /* libPods-iPhone2Rails.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC7522D75E439EA296F02B0 /* libPods-iPhone2Rails.a */; };
 /* End PBXBuildFile section */
@@ -38,12 +37,11 @@
 		A72485E11ADF996900052F2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A72485E31ADF996900052F2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A72485E41ADF996900052F2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A72485E71ADF996900052F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A72485E91ADF996900052F2D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A72485EC1ADF996900052F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A72485F21ADF996900052F2D /* iPhone2RailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPhone2RailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72485F71ADF996900052F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72485F81ADF996900052F2D /* iPhone2RailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhone2RailsTests.m; sourceTree = "<group>"; };
+		A7A91C681AEE2AD800EF956D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/iPhone2Rails-master/iPhone2Rails/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		A7D7B8C21AE4B765000183D2 /* TableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
 		A7D7B8C31AE4B84D000183D2 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
 		B864586FDB73644356B111E4 /* Pods-iPhone2Rails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhone2Rails.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iPhone2Rails/Pods-iPhone2Rails.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,9 +112,8 @@
 				A72485E11ADF996900052F2D /* AppDelegate.m */,
 				A72485E31ADF996900052F2D /* ViewController.h */,
 				A72485E41ADF996900052F2D /* ViewController.m */,
-				A72485E61ADF996900052F2D /* Main.storyboard */,
+				A7A91C671AEE2AD800EF956D /* Main.storyboard */,
 				A72485E91ADF996900052F2D /* Images.xcassets */,
-				A72485EB1ADF996900052F2D /* LaunchScreen.xib */,
 				A72485DC1ADF996900052F2D /* Supporting Files */,
 			);
 			path = iPhone2Rails;
@@ -230,9 +227,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72485E81ADF996900052F2D /* Main.storyboard in Resources */,
-				A72485ED1ADF996900052F2D /* LaunchScreen.xib in Resources */,
 				A72485EA1ADF996900052F2D /* Images.xcassets in Resources */,
+				A7A91C691AEE2AD800EF956D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,20 +305,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A72485E61ADF996900052F2D /* Main.storyboard */ = {
+		A7A91C671AEE2AD800EF956D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A72485E71ADF996900052F2D /* Base */,
+				A7A91C681AEE2AD800EF956D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A72485EB1ADF996900052F2D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A72485EC1ADF996900052F2D /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

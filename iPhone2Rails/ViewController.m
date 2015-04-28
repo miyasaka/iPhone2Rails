@@ -39,30 +39,22 @@
 #define NAMELISTURL @"http://dev-gmo.charlie-s.jp:3000/sample2s.json"
 
 - (IBAction)postData:(id)sender {
+
     // redy for send parameter
-    
     NSDictionary *params = [NSDictionary dictionaryWithObject:self.txtImp.text forKey:@"sample2[col1]"];
     
     //HTTP
-    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     [manager POST:NAMELISTURL parameters:params
-     
           success:^(AFHTTPRequestOperation *opertion, id responseObject){
-              
               // success
-              
               NSLog(@"success: %@", responseObject);
-              
           }
      
           failure:^(AFHTTPRequestOperation *operation, NSError *error){
-              
-              // failed
-              
-              NSLog(@"error: %@", error);
-              
+            // failed
+            NSLog(@"error: %@", error);
           }];
 }
 
@@ -86,6 +78,9 @@
          failure:^(AFHTTPRequestOperation *operation, NSError *error){
              NSLog(@"error: %@",error);
          }];
+}
+
+- (IBAction)searchData:(id)sender {
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)theTextField
