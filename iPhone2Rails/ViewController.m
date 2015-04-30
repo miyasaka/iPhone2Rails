@@ -89,10 +89,14 @@
 // search from MySQL
 - (IBAction)searchData:(id)sender {
     NSMutableString *str_URL = [NSMutableString string];
+    NSString *before = self.txtImp.text;
+    NSString *after = [before stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
     [str_URL appendString:NAMELISTURL];
+//    [str_URL appendString:@"?utf8=✓&search="];
     [str_URL appendString:@"?search="];
-    [str_URL appendString:self.txtImp.text];
-    // NSLog(@"Input:%@",str_URL);
+    [str_URL appendString:after];
+    NSLog(@"Input:%@",str_URL);
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:str_URL parameters:nil
