@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *txtImp;
 @property (strong, nonatomic) IBOutlet TableView *tableViewNameList;
+@property (strong, nonatomic) IBOutlet UISearchBar *selfSearch;
 
 - (IBAction)postData:(id)sender;
 

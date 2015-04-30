@@ -14,15 +14,15 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.nameList count];
+ 
 }
-
 // TableViewDataSource :必須（テーブルに表示するデータを返す）
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    
-    NSLog(@" tableView :%@",self.nameList);
+    // mark - miyasaka
+    // NSLog(@" tableView :%@",self.nameList);
     cell.textLabel.text = [self.nameList objectAtIndex:indexPath.row];
     return cell;
 }

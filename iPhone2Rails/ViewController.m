@@ -70,17 +70,15 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:NAMELISTURL parameters:nil
          success:^(AFHTTPRequestOperation *operation, id responseObject){
-             NSLog(@"success: %@", responseObject);
+             // NSLog(@"success: %@", responseObject);
              
              NSMutableArray *names = [NSMutableArray array];
              for (NSDictionary *jsonObject in responseObject){
                  
                  [names addObject:[jsonObject objectForKey:@"col1"]];
              }
-             NSLog(@"miya-1:%@",names);
              self.tableViewNameList.nameList = names;
              [self.tableViewNameList reloadData];
-             NSLog(@"miya-2:%@",names);
              
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error){
@@ -88,7 +86,36 @@
          }];
 }
 
+// search from MySQL
 - (IBAction)searchData:(id)sender {
+    NSMutableString *str_URL = [NSMutableString string];
+    [str_URL appendString:NAMELISTURL];
+    [str_URL appendString:@"?search="];
+    [str_URL appendString:self.txtImp.text];
+    NSLog(@"Input:%@",str_URL);
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:str_URL parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject){
+             // NSLog(@"success: %@", responseObject);
+             
+             NSMutableArray *names = [NSMutableArray array];
+             for (NSDictionary *jsonObject in responseObject){
+                 
+                 [names addObject:[jsonObject objectForKey:@"col1"]];
+             }
+             self.tableViewNameList.nameList = names;
+             [self.tableViewNameList reloadData];
+             
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error){
+             NSLog(@"error: %@",error);
+         }];
+}
+
+// search from TableVie
+- (IBAction)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"Push Search button!!!:");
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)theTextField
