@@ -92,7 +92,7 @@
     [str_URL appendString:NAMELISTURL];
     [str_URL appendString:@"?search="];
     [str_URL appendString:self.txtImp.text];
-    NSLog(@"Input:%@",str_URL);
+    // NSLog(@"Input:%@",str_URL);
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:str_URL parameters:nil
