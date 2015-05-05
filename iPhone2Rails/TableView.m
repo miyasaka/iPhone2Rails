@@ -27,4 +27,16 @@
     return cell;
 }
 
+// select deta
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // mark - miyasaka
+     NSLog(@"Selected Data-%@",self);
+     NSLog(@"Selected Data %ld",indexPath.row);
+
+    //   [self performSelector:@"NameDetail" sender:self];
+ //   [self performSegueWithIdentifier:@"NameDetail" sender:self];
+}
+
+
 @end
